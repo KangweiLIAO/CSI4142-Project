@@ -30,3 +30,14 @@
 2022-03-14 00:47:09.647 EDT [43983] LOG:  database system is ready to accept connections
 2022-03-14 00:49:36.536 EDT [44018] ERROR:  column "version" does not exist at character 8
 2022-03-14 00:49:36.536 EDT [44018] STATEMENT:  select version
+2022-03-14 01:02:21.076 EDT [44486] FATAL:  role "angrytako" does not exist
+2022-03-14 01:02:21.233 EDT [44487] FATAL:  role "angrytako" does not exist
+2022-03-14 01:02:21.295 EDT [44488] FATAL:  role "angrytako" does not exist
+2022-03-14 01:02:30.592 EDT [43983] LOG:  received fast shutdown request
+2022-03-14 01:02:30.592 EDT [43983] LOG:  aborting any active transactions
+2022-03-14 01:02:30.592 EDT [44018] FATAL:  terminating connection due to administrator command
+2022-03-14 01:02:30.592 EDT [44015] FATAL:  terminating connection due to administrator command
+2022-03-14 01:02:30.593 EDT [43991] FATAL:  terminating connection due to administrator command
+2022-03-14 01:02:30.600 EDT [43983] LOG:  background worker "logical replication launcher" (PID 43990) exited with exit code 1
+2022-03-14 01:02:30.602 EDT [43985] LOG:  shutting down
+2022-03-14 01:02:30.609 EDT [43983] LOG:  database system is shut down
