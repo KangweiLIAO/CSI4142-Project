@@ -10,7 +10,7 @@
 
 -   Codes are placed in "scripts/" folder
 -   [Deliverable 2 report](files/Deliverable2.pdf)
-    -   A clearer version of [high-level data staging plan](files/files/High-levelDataStagingPlan.pdf)
+    -   A clearer version of [high-level data staging plan](files/High-levelDataStagingPlan.pdf)
 -   [Meeting note](files/MeetingNotes.pdf)
 -   [Teamwork plan](files/TeamworkPlan.pdf)
 
