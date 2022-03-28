@@ -33,11 +33,11 @@
 -   In order to connect to the database using Python, you need to fill in your **username** and **password**
     in database.ini file under 'script/'. (example see below)
 
-    ```json
+    ```yaml
     [postgresql]
     host=www.eecs.uottawa.ca
     database=group_15
     port=15432
-    user=example // enter your user name after =
-    password=example // enter your password after =
+    user=example // replace example with your username
+    password=example // replace example with your password
     ```
