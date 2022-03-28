@@ -1,7 +1,7 @@
 import os
 import csv
 import psycopg2
-import pandas as pd
+
 from configparser import ConfigParser
 
 countries = ["China", "Canada", "Mexico", "Mozambique", "India",
