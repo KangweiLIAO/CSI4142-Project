@@ -1,9 +1,35 @@
-import psycopg2
 import os
+import csv
+import psycopg2
+import pandas as pd
 from configparser import ConfigParser
 
+countries = ["China", "Canada", "Mexico", "Mozambique", "India",
+             "United States", "Vietnam", "Liberia", "South Africa"]
 
-def config(filename='database.ini', section='postgresql'):
+
+def extract_csv(file_path):
+    rows = []
+    file_path = os.getcwd() + file_path  # file path relative to project root
+    with open(file_path, newline='') as csvfile:
+        reader = csv.reader(csvfile, delimiter=',', quotechar='"', escapechar="'")
+        for row in reader:
+            rows += [row]
+    return rows
+
+
+def generate_sql(rows, data_type):
+    result = []
+    if (data_type in ['health', 'population', 'education']):
+        for i in range(len(rows[0])):
+            if (i > 0) and (rows[0][i] not in result):
+                temp = '\"' + str(rows[0][i]) + '\" numeric,'
+                if (temp not in result):
+                    result.append(temp)
+    print(' '.join(result))
+
+
+def config_database(filename='database.ini', section='postgresql'):
     filename = os.getcwd() + "/scripts/" + filename
     # create a parser
     parser = ConfigParser()
@@ -31,7 +57,7 @@ def connect():
     conn = None
     try:
         # read connection parameters
-        params = config()
+        params = config_database()
         if (params == None):
             return
 
@@ -39,7 +65,7 @@ def connect():
         print('Connecting to the PostgreSQL database...')
         conn = psycopg2.connect(**params)
 
-        # create a cursor
+        # create a db cursor
         cur = conn.cursor()
 
         # execute a statement
@@ -62,4 +88,6 @@ def connect():
 
 
 if __name__ == '__main__':
-    connect()
+    rows = extract_csv("/data/health.csv")
+    generate_sql(rows, "health")
+    # connect()
