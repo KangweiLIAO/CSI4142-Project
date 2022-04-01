@@ -1,0 +1,63 @@
+﻿Country Name,Country Code,Series Name,Series Code,Scale (Precision),1990 [YR1990],2000 [YR2000],2010 [YR2010],2020 [YR2020]
+India,IND,"Population, total",SP.POP.TOTL,Millions (0.00),873.28,1056.58,1234.28,1380.00
+India,IND,Population growth (annual %),SP.POP.GROW,Unit (0.0),2.1,1.8,1.4,1.0
+India,IND,Surface area (sq. km),AG.SRF.TOTL.K2,Thousands (0.0),3287.3,3287.3,3287.3,
+India,IND,Population density (people per sq. km of land area),EN.POP.DNST,Unit (0.0),293.7,355.4,415.1,464.1
+India,IND,Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Unit (0.0),45.3,,21.9,
+India,IND,Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population),SI.POV.DDAY,Unit (0.0),47.6,,22.5,
+India,IND,"GNI, Atlas method (current US$)",NY.GNP.ATLS.CD,Billions (0.00),334.59,467.08,1505.74,2651.67
+India,IND,"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Unit (0),380,440,1220,1920
+India,IND,"GNI, PPP (current international $)",NY.GNP.MKTP.PP.CD,Billions (0.00),1034.99,2190.69,5173.30,8891.69
+India,IND,"GNI per capita, PPP (current international $)",NY.GNP.PCAP.PP.CD,Unit (0),1190,2070,4190,6440
+India,IND,Income share held by lowest 20%,SI.DST.FRST.20,Unit (0.0),8.9,,8.1,
+India,IND,"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Unit (0),58,63,67,
+India,IND,"Fertility rate, total (births per woman)",SP.DYN.TFRT.IN,Unit (0.0),4.0,3.3,2.6,2.2
+India,IND,"Adolescent fertility rate (births per 1,000 women ages 15-19)",SP.ADO.TFRT,Unit (0),99,67,35,
+India,IND,"Contraceptive prevalence, any method (% of married women ages 15-49)",SP.DYN.CONU.ZS,Unit (0),,47,,
+India,IND,Births attended by skilled health staff (% of total),SH.STA.BRTC.ZS,Unit (0),,43,,
+India,IND,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Unit (0),126,92,58,33
+India,IND,"Prevalence of underweight, weight for age (% of children under 5)",SH.STA.MALN.ZS,Unit (0.0),52.8,46.3,,33.4
+India,IND,"Immunization, measles (% of children ages 12-23 months)",SH.IMM.MEAS,Unit (0),56,56,82,
+India,IND,"Primary completion rate, total (% of relevant age group)",SE.PRM.CMPT.ZS,Unit (0),,71,,95
+India,IND,"School enrollment, primary (% gross)",SE.PRM.ENRR,Unit (0.0),91.4,94.3,109.1,99.9
+India,IND,"School enrollment, secondary (% gross)",SE.SEC.ENRR,Unit (0),,45,63,75
+India,IND,"School enrollment, primary and secondary (gross), gender parity index (GPI)",SE.ENR.PRSC.FM.ZS,Unit (0),,1,1,1
+India,IND,"Prevalence of HIV, total (% of population ages 15-49)",SH.DYN.AIDS.ZS,Unit (0.0),,,,
+India,IND,Forest area (sq. km),AG.LND.FRST.K2,Thousands (0.0),639.4,675.9,695.0,721.6
+India,IND,Terrestrial and marine protected areas (% of total territorial area),ER.PTD.TOTL.ZS,Unit (0.0),,,,3.5
+India,IND,"Annual freshwater withdrawals, total (% of internal resources)",ER.H2O.FWTL.ZS,Unit (0.0),36.1,44.3,44.8,44.8
+India,IND,Urban population growth (annual %),SP.URB.GROW,Unit (0.0),3.0,2.5,2.5,2.3
+India,IND,Energy use (kg of oil equivalent per capita),EG.USE.PCAP.KG.OE,Unit (0),350,417,562,
+India,IND,CO2 emissions (metric tons per capita),EN.ATM.CO2E.PC,Unit (0.00),0.64,0.89,1.35,
+India,IND,Electric power consumption (kWh per capita),EG.USE.ELEC.KH.PC,Unit (0),272,394,640,
+India,IND,GDP (current US$),NY.GDP.MKTP.CD,Billions (0.00),320.98,468.39,1675.62,2660.25
+India,IND,GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Unit (0.0),5.5,3.8,8.5,-7.3
+India,IND,"Inflation, GDP deflator (annual %)",NY.GDP.DEFL.KD.ZG,Unit (0.0),10.7,3.6,10.5,4.6
+India,IND,"Agriculture, forestry, and fishing, value added (% of GDP)",NV.AGR.TOTL.ZS,Unit (0),27,22,17,18
+India,IND,"Industry (including construction), value added (% of GDP)",NV.IND.TOTL.ZS,Unit (0),27,27,31,24
+India,IND,Exports of goods and services (% of GDP),NE.EXP.GNFS.ZS,Unit (0),7,13,22,19
+India,IND,Imports of goods and services (% of GDP),NE.IMP.GNFS.ZS,Unit (0),8,14,27,19
+India,IND,Gross capital formation (% of GDP),NE.GDI.TOTL.ZS,Unit (0),29,27,40,29
+India,IND,"Revenue, excluding grants (% of GDP)",GC.REV.XGRT.GD.ZS,Unit (0.0),12.4,11.7,13.2,13.2
+India,IND,Net lending (+) / net borrowing (-) (% of GDP),GC.NLD.TOTL.GD.ZS,Unit (0.0),-3.4,-3.8,-3.5,-2.3
+India,IND,Time required to start a business (days),IC.REG.DURS,Unit (0),,,,
+India,IND,Domestic credit provided by financial sector (% of GDP),FS.AST.DOMS.GD.ZS,Unit (0.0),,,,
+India,IND,Tax revenue (% of GDP),GC.TAX.TOTL.GD.ZS,Unit (0.0),10.0,8.8,10.4,12.0
+India,IND,Military expenditure (% of GDP),MS.MIL.XPND.GD.ZS,Unit (0.0),3.1,2.9,2.9,2.9
+India,IND,Mobile cellular subscriptions (per 100 people),IT.CEL.SETS.P2,Unit (0.0),0.0,0.3,60.9,83.6
+India,IND,Individuals using the Internet (% of population),IT.NET.USER.ZS,Unit (0.0),0.0,0.5,7.5,41.0
+India,IND,High-technology exports (% of manufactured exports),TX.VAL.TECH.MF.ZS,Unit (0),,,8,11
+India,IND,Statistical Capacity Score (Overall Average) (scale 0 - 100),IQ.SCI.OVRL,Unit (0),,,81,77
+India,IND,Merchandise trade (% of GDP),TG.VAL.TOTL.GD.ZS,Unit (0),13,20,34,24
+India,IND,Net barter terms of trade index (2000 = 100),TT.PRI.MRCH.XD.WD,Unit (0),86,100,93,105
+India,IND,"External debt stocks, total (DOD, current US$)",DT.DOD.DECT.CD,Millions (0),83472,101131,290428,564179
+India,IND,"Total debt service (% of exports of goods, services and primary income)",DT.TDS.DECT.EX.ZS,Unit (0.0),33.0,17.1,6.8,15.0
+India,IND,Net migration,SM.POP.NETM,Thousands (0),,,,
+India,IND,"Personal remittances, received (current US$)",BX.TRF.PWKR.CD.DT,Millions (0),2384,12883,53480,83149
+India,IND,"Foreign direct investment, net inflows (BoP, current US$)",BX.KLT.DINV.CD.WD,Millions (0),237,3584,27397,64362
+India,IND,Net official development assistance received (current US$),DT.ODA.ODAT.CD,Millions (0.0),1395.0,1383.4,2831.3,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Data from database: WDI Central,,,,,,,,
+Last Updated: 02/15/2022,,,,,,,,

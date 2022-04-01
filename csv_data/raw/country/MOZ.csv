@@ -1,0 +1,63 @@
+﻿Country Name,Country Code,Series Name,Series Code,Scale (Precision),1990 [YR1990],2000 [YR2000],2010 [YR2010],2020 [YR2020]
+Mozambique,MOZ,"Population, total",SP.POP.TOTL,Millions (0.00),12.99,17.71,23.53,31.26
+Mozambique,MOZ,Population growth (annual %),SP.POP.GROW,Unit (0.0),1.4,2.7,2.7,2.9
+Mozambique,MOZ,Surface area (sq. km),AG.SRF.TOTL.K2,Thousands (0.0),799.4,799.4,799.4,
+Mozambique,MOZ,Population density (people per sq. km of land area),EN.POP.DNST,Unit (0.0),16.5,22.5,29.9,39.7
+Mozambique,MOZ,Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Unit (0.0),,54.1,54.7,
+Mozambique,MOZ,Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population),SI.POV.DDAY,Unit (0.0),,79.8,69.7,
+Mozambique,MOZ,"GNI, Atlas method (current US$)",NY.GNP.ATLS.CD,Billions (0.00),,5.66,12.27,14.41
+Mozambique,MOZ,"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Unit (0),,320,520,460
+Mozambique,MOZ,"GNI, PPP (current international $)",NY.GNP.MKTP.PP.CD,Billions (0.00),,8.18,21.83,39.21
+Mozambique,MOZ,"GNI per capita, PPP (current international $)",NY.GNP.PCAP.PP.CD,Unit (0),,460,930,1250
+Mozambique,MOZ,Income share held by lowest 20%,SI.DST.FRST.20,Unit (0.0),,5.4,5.2,
+Mozambique,MOZ,"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Unit (0),45,49,52,
+Mozambique,MOZ,"Fertility rate, total (births per woman)",SP.DYN.TFRT.IN,Unit (0.0),6.2,5.8,5.4,4.8
+Mozambique,MOZ,"Adolescent fertility rate (births per 1,000 women ages 15-19)",SP.ADO.TFRT,Unit (0),183,183,164,
+Mozambique,MOZ,"Contraceptive prevalence, any method (% of married women ages 15-49)",SP.DYN.CONU.ZS,Unit (0),,,,
+Mozambique,MOZ,Births attended by skilled health staff (% of total),SH.STA.BRTC.ZS,Unit (0),,,,
+Mozambique,MOZ,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Unit (0),245,170,105,71
+Mozambique,MOZ,"Prevalence of underweight, weight for age (% of children under 5)",SH.STA.MALN.ZS,Unit (0.0),,24.5,15.6,
+Mozambique,MOZ,"Immunization, measles (% of children ages 12-23 months)",SH.IMM.MEAS,Unit (0),59,71,82,
+Mozambique,MOZ,"Primary completion rate, total (% of relevant age group)",SE.PRM.CMPT.ZS,Unit (0),28,17,59,58
+Mozambique,MOZ,"School enrollment, primary (% gross)",SE.PRM.ENRR,Unit (0.0),66.2,76.2,112.5,118.4
+Mozambique,MOZ,"School enrollment, secondary (% gross)",SE.SEC.ENRR,Unit (0),7,6,25,
+Mozambique,MOZ,"School enrollment, primary and secondary (gross), gender parity index (GPI)",SE.ENR.PRSC.FM.ZS,Unit (0),1,1,1,
+Mozambique,MOZ,"Prevalence of HIV, total (% of population ages 15-49)",SH.DYN.AIDS.ZS,Unit (0.0),1.2,8.5,11.8,11.5
+Mozambique,MOZ,Forest area (sq. km),AG.LND.FRST.K2,Thousands (0.0),433.8,411.9,389.7,367.4
+Mozambique,MOZ,Terrestrial and marine protected areas (% of total territorial area),ER.PTD.TOTL.ZS,Unit (0.0),,,,13.4
+Mozambique,MOZ,"Annual freshwater withdrawals, total (% of internal resources)",ER.H2O.FWTL.ZS,Unit (0.0),0.7,0.9,1.4,1.5
+Mozambique,MOZ,Urban population growth (annual %),SP.URB.GROW,Unit (0.0),7.4,3.3,4.3,4.4
+Mozambique,MOZ,Energy use (kg of oil equivalent per capita),EG.USE.PCAP.KG.OE,Unit (0),456,405,423,
+Mozambique,MOZ,CO2 emissions (metric tons per capita),EN.ATM.CO2E.PC,Unit (0.00),0.09,0.08,0.12,
+Mozambique,MOZ,Electric power consumption (kWh per capita),EG.USE.ELEC.KH.PC,Unit (0),42,126,453,
+Mozambique,MOZ,GDP (current US$),NY.GDP.MKTP.CD,Billions (0.00),,5.66,11.10,14.02
+Mozambique,MOZ,GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Unit (0.0),1.0,1.2,6.5,-1.2
+Mozambique,MOZ,"Inflation, GDP deflator (annual %)",NY.GDP.DEFL.KD.ZG,Unit (0.0),35.8,11.5,8.0,2.5
+Mozambique,MOZ,"Agriculture, forestry, and fishing, value added (% of GDP)",NV.AGR.TOTL.ZS,Unit (0),,19,27,26
+Mozambique,MOZ,"Industry (including construction), value added (% of GDP)",NV.IND.TOTL.ZS,Unit (0),,18,16,22
+Mozambique,MOZ,Exports of goods and services (% of GDP),NE.EXP.GNFS.ZS,Unit (0),,11,28,
+Mozambique,MOZ,Imports of goods and services (% of GDP),NE.IMP.GNFS.ZS,Unit (0),,35,42,
+Mozambique,MOZ,Gross capital formation (% of GDP),NE.GDI.TOTL.ZS,Unit (0),,38,22,
+Mozambique,MOZ,"Revenue, excluding grants (% of GDP)",GC.REV.XGRT.GD.ZS,Unit (0.0),,,16.4,28.7
+Mozambique,MOZ,Net lending (+) / net borrowing (-) (% of GDP),GC.NLD.TOTL.GD.ZS,Unit (0.0),,,-3.2,2.2
+Mozambique,MOZ,Time required to start a business (days),IC.REG.DURS,Unit (0),,,21,
+Mozambique,MOZ,Domestic credit provided by financial sector (% of GDP),FS.AST.DOMS.GD.ZS,Unit (0.0),,,,
+Mozambique,MOZ,Tax revenue (% of GDP),GC.TAX.TOTL.GD.ZS,Unit (0.0),,,14.7,26.9
+Mozambique,MOZ,Military expenditure (% of GDP),MS.MIL.XPND.GD.ZS,Unit (0.0),5.9,1.3,0.9,1.1
+Mozambique,MOZ,Mobile cellular subscriptions (per 100 people),IT.CEL.SETS.P2,Unit (0.0),0.0,0.3,30.7,48.7
+Mozambique,MOZ,Individuals using the Internet (% of population),IT.NET.USER.ZS,Unit (0.0),0.0,0.1,4.2,15.1
+Mozambique,MOZ,High-technology exports (% of manufactured exports),TX.VAL.TECH.MF.ZS,Unit (0),,,,1
+Mozambique,MOZ,Statistical Capacity Score (Overall Average) (scale 0 - 100),IQ.SCI.OVRL,Unit (0),,,72,62
+Mozambique,MOZ,Merchandise trade (% of GDP),TG.VAL.TOTL.GD.ZS,Unit (0),,27,68,72
+Mozambique,MOZ,Net barter terms of trade index (2000 = 100),TT.PRI.MRCH.XD.WD,Unit (0),175,100,104,90
+Mozambique,MOZ,"External debt stocks, total (DOD, current US$)",DT.DOD.DECT.CD,Millions (0),4633,6681,5936,20932
+Mozambique,MOZ,"Total debt service (% of exports of goods, services and primary income)",DT.TDS.DECT.EX.ZS,Unit (0.0),26.2,14.6,24.7,34.0
+Mozambique,MOZ,Net migration,SM.POP.NETM,Thousands (0),,,,
+Mozambique,MOZ,"Personal remittances, received (current US$)",BX.TRF.PWKR.CD.DT,Millions (0),70,37,116,349
+Mozambique,MOZ,"Foreign direct investment, net inflows (BoP, current US$)",BX.KLT.DINV.CD.WD,Millions (0),9,139,1258,3188
+Mozambique,MOZ,Net official development assistance received (current US$),DT.ODA.ODAT.CD,Millions (0.0),997.5,907.4,1943.1,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Data from database: WDI Central,,,,,,,,
+Last Updated: 02/15/2022,,,,,,,,
