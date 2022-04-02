@@ -6,7 +6,7 @@ countries = ["Canada", "China", "India", "Liberia", "Mexico", "Mozambique",
 
 country_codes = ["CAN", "CHN", "IND", "LBR", "MEX", "MOZ", "USA", "VNM", "ZAF"]
 
-yearly_data = ["education", "event", "health", "life_quality", "population"]
+yearly_data = ["education", "health", "life_quality", "population"]
 
 
 def get_csv(data: pd.DataFrame, filename: str, index: bool, index_label=None, save_path="csv_data/"):
