@@ -4,8 +4,8 @@ from . import csv_utils as utils
 df: pd.DataFrame = None
 
 
-def init_date(start="2005", end="2022"):
-    """Generate month dimension table within [start,end]"""
+def init_date(start="2005", end="2021"):
+    """Generate month dimension table within [start,end)"""
     global df
     df = pd.DataFrame({"Date": pd.date_range(start, end, freq="M")})
     df["Month"] = df.Date.dt.month

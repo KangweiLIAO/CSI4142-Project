@@ -1,11 +1,11 @@
 import os
 import psycopg2
-from sqlalchemy import create_engine
+import sqlalchemy
 from configparser import ConfigParser
 
 pg_info = {}
 pg_conn = None
-sql_engine = None
+sql_engine: sqlalchemy.engine = None
 
 
 def config_database(filename='database.ini', section='postgresql'):
@@ -42,31 +42,37 @@ def connect():
 
         # connect to the PostgreSQL server
         print('Connecting to the PostgreSQL database...')
-        sql_engine = create_engine(
+        sql_engine = sqlalchemy.create_engine(
             f"postgresql://{pg_info['user']}:{pg_info['password']}@{pg_info['host']}:{pg_info['port']}/{pg_info['database']}").connect()
         pg_conn = psycopg2.connect(**pg_info)
+        pg_conn.autocommit = True
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
 
 
-def execute_sql(query: str):
+def execute_sql(query: str, fetch: bool = False):
+    if (not pg_conn):
+        return
     try:
         # create a db cursor
         cur = pg_conn.cursor()
         # execute a statement
         cur.execute(query)
-        # close the communication with the PostgreSQL
-        cur.close()
+        if(fetch):
+            result = cur.fetchall()
+            cur.close()
+            return result
+        else:
+            cur.close()
     except Exception as error:
         print(error)
-        disconnect()
 
 
 def grant_permit(tables, user: str = "lzou041"):
     if (tables):
         for table in tables:
-            execute_sql(f"GRANT ALL PRIVILEGES ON public.{table} TO {user};")
-        print(f"Permisssion granted to {user}")
+            execute_sql(f"GRANT ALL ON public.{table} TO {user};")
+            print(f"{table} permisssion granted to {user}")
     else:
         print(f"FAIL to grant permission to {user}")
 
