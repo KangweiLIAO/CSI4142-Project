@@ -47,4 +47,4 @@ def get_df(transpose: bool = True) -> pd.DataFrame:
 
 def get_csv(index: bool = True):
     # export dataframe df as .csv file in ../csv_data/ folder
-    utils.get_csv(get_df(), "dim_country_record.csv", index=index, index_label="id")
+    utils.get_csv(get_df(), "dim_country_record.csv", index=index, index_label="record_id")

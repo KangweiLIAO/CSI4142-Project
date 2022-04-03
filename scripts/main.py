@@ -11,11 +11,11 @@ if __name__ == '__main__':
         # Push to database:
         # phase_2.dim_date.get_df().to_sql("dim_date", con=db.sql_engine, if_exists='replace', index_label="date_id")
         # phase_2.dim_country.get_df().to_sql("dim_country", con=db.sql_engine, if_exists='replace', index=False)
-        phase_2.dim_event.get_df().to_sql("dim_event", con=db.sql_engine,
-                                          if_exists='replace', index_label="event_id")
-        # phase_2.dim_country_record.get_df().to_sql(
-        #     "dim_country_record", con=db.sql_engine, dtype={"Decades": sql_types.BIGINT()},
-        #     if_exists='replace', method='multi', index=True, index_label="id")
+        # phase_2.dim_event.get_df().to_sql("dim_event", con=db.sql_engine,
+        #                                   if_exists='replace', index_label="event_id")
+        phase_2.dim_country_record.get_df().to_sql(
+            "dim_country_record", con=db.sql_engine, dtype={"Decades": sql_types.BIGINT()},
+            if_exists='replace', method='multi', index=True, index_label="record_id")
         # tables = phase_2.dim_yearly.get_dfs()
         # for i in range(len(tables)):
         #     tables[i].to_sql(f"dim_{csv.yearly_data[i]}", con=db.sql_engine, dtype={"Year": sql_types.BIGINT(

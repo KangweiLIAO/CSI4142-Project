@@ -4,7 +4,7 @@ from . import csv_utils as utils
 df: pd.DataFrame = None
 
 
-def init_date(start="2005", end="2021"):
+def init(start="2005", end="2021"):
     """Generate month dimension table within [start,end)"""
     global df
     df = pd.DataFrame({"Date": pd.date_range(start, end, freq="M")})
@@ -17,7 +17,7 @@ def init_date(start="2005", end="2021"):
 def get_df() -> pd.DataFrame:
     global df
     if df is None:
-        init_date()
+        init()
     return df
 
 
