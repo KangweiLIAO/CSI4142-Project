@@ -60,7 +60,15 @@ def execute_sql(query: str):
     except Exception as error:
         print(error)
         disconnect()
-        
+
+
+def grant_permit(tables, user: str = "lzou041"):
+    if (tables):
+        for table in tables:
+            execute_sql(f"GRANT ALL PRIVILEGES ON public.{table} TO {user};")
+        print(f"Permisssion granted to {user}")
+    else:
+        print(f"FAIL to grant permission to {user}")
 
 
 def disconnect():

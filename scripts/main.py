@@ -15,12 +15,13 @@ if __name__ == '__main__':
         #                                     if_exists='replace', method='multi', index=False)
         tables = phase_2.dim_yearly.get_dfs()
         for i in range(len(tables)):
-            tables[i].to_sql(f"dim_{csv.yearly_data[i]}", con=db.sql_engine,
-                             dtype={"Years": sql_types.BIGINT()},
-                             if_exists='replace', method='multi', index=False)
+            tables[i].to_sql(f"dim_{csv.yearly_data[i]}", con=db.sql_engine, dtype={"Year": sql_types.BIGINT(
+            )}, if_exists='replace', method='multi', index=True, index_label=f"{csv.yearly_data[i]}_id")
 
         # phase_2.dim_country.get_csv()
         # phase_2.dim_yearly.get_csv()
+        db.grant_permit(["dim_country", "dim_date", "dim_education",
+                        "dim_health", "dim_life_quality", "dim_population"], "lzou041")
     except Exception as e:
         print(traceback.format_exc())
     finally:
