@@ -19,6 +19,7 @@ def clean_data() -> pd.DataFrame:
 
         frames = []
         for c in range(len(utils.country_codes)):
+            # insert country name/code into each temp frame
             tmp_df = clean_df.iloc[c*rows_per_country:c*rows_per_country+rows_per_country, :].copy()
             tmp_df.loc[-2] = ["C.NAME"] + [utils.countries[c]] * 16
             tmp_df.loc[-1] = ["C.CODE"] + [utils.country_codes[c]] * 16
