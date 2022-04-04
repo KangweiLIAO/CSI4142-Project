@@ -11,6 +11,7 @@ def init_fact():
 if __name__ == '__main__':
     try:
         db.connect()
+        print("\nExecuting commands...\n")
         # Push to database:
         # phase_2.dim_date.push(db.sql_engine)
         # phase_2.dim_country.push(db.sql_engine)

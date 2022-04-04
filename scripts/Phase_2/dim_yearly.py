@@ -32,11 +32,11 @@ def clean_data() -> list[pd.DataFrame]:
 
 def get_dfs() -> pd.DataFrame:
     """Returns transformed pandas dataframes table (clean)"""
-    frames = clean_data()
-    if frames == []:
-        clean_data()
+    frames = [df.T.reset_index().rename(columns={"index": "Years"}) for df in clean_data()]
     for df in frames:
-        df = df.T.apply(pd.to_numeric, errors='ignore')
+        # Parse corresponding columns' type
+        df[df.columns[0]] = df[df.columns[0]].astype('int64')
+        df[df.columns[3:]] = df[df.columns[3:]].astype('float64')
     return frames
 
 
