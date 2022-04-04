@@ -1,0 +1,37 @@
+hdi_id,Country Code,Country Name,Year,HDI
+0,CAN,Canada,2007,0.83
+1,CAN,Canada,2005,0.82
+2,CAN,Canada,2010,0.85
+3,CAN,Canada,2015,0.88
+4,CHN,China,2015,0.54
+5,CHN,China,2010,0.48
+6,CHN,China,2007,0.46
+7,CHN,China,2005,0.42
+8,IND,India,2015,0.38
+9,IND,India,2010,0.33
+10,IND,India,2005,0.29
+11,IND,India,2007,0.31
+12,LBR,Liberia,2015,0.24
+13,LBR,Liberia,2010,0.23
+14,LBR,Liberia,2005,0.21
+15,LBR,Liberia,2007,0.22
+16,MEX,Mexico,2005,0.5
+17,MEX,Mexico,2007,0.51
+18,MEX,Mexico,2010,0.52
+19,MEX,Mexico,2015,0.54
+20,MOZ,Mozambique,2015,0.28
+21,MOZ,Mozambique,2010,0.23
+22,MOZ,Mozambique,2007,0.23
+23,MOZ,Mozambique,2005,0.21
+24,USA,United States,2005,0.74
+25,USA,United States,2007,0.75
+26,USA,United States,2010,0.77
+27,USA,United States,2015,0.78
+28,VNM,Vietnam,2015,0.48
+29,VNM,Vietnam,2010,0.45
+30,VNM,Vietnam,2007,0.43
+31,VNM,Vietnam,2005,0.43
+32,ZAF,South Africa,2010,0.35
+33,ZAF,South Africa,2015,0.38
+34,ZAF,South Africa,2007,0.34
+35,ZAF,South Africa,2005,0.33

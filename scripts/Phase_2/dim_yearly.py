@@ -41,4 +41,4 @@ def get_dfs(transpose: bool = True) -> pd.DataFrame:
 
 def get_csv(index: bool = True):
     for i in range(len(get_dfs())):
-        utils.get_csv(dfs[i], f"dim_{utils.yearly_data[i]}.csv", index=index, index_label="Year")
+        utils.get_csv(dfs[i], f"dim_{utils.yearly_data[i]}.csv", index=index, index_label=f"{utils.yearly_data[i]}_id")

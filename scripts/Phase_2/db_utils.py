@@ -72,9 +72,8 @@ def grant_permit(tables, user: str = "lzou041"):
     if (tables):
         for table in tables:
             execute_sql(f"GRANT ALL ON public.{table} TO {user};")
-            print(f"{table} permisssion granted to {user}")
     else:
-        print(f"FAIL to grant permission to {user}")
+        print(f"No table selected to grant permit...")
 
 
 def disconnect():

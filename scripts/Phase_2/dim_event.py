@@ -7,8 +7,8 @@ df: pd.DataFrame = None
 
 def clean_data():
     global df
-    raw_data = pd.read_csv(f"./csv_data/raw/event.csv")  # reading raw csv data
-    df = raw_data.sort_values(by=["Country Code"])  # sort table by series code
+    raw_data = pd.read_csv("./csv_data/raw/event.csv")  # reading raw csv data
+    df = raw_data.sort_values(by=["Country Code"])  # sort table by country code
     df.reset_index(drop=True, inplace=True)
     df["Start Date"] = df["Start Date"].apply(lambda x: int(x[0]) if not x[1].isdigit() else int(x[:2]))
     df["End Date"] = df["End Date"].apply(lambda x: int(x[0]) if not x[1].isdigit() else int(x[:2]))
