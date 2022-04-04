@@ -9,7 +9,7 @@ country_codes = ["CAN", "CHN", "IND", "LBR", "MEX", "MOZ", "USA", "VNM", "ZAF"]
 yearly_data = ["education", "health", "life_quality", "population"]
 
 
-def get_csv(data: pd.DataFrame, filename: str, index: bool, index_label=None, save_path="csv_data/"):
+def get_csv(data: pd.DataFrame, filename: str, save_path="csv_data/", index: bool = True, index_label=None):
     """Export csv data with default settings"""
     if not os.path.isdir("csv_data"):
         os.mkdir(os.getcwd() + "/csv_data")

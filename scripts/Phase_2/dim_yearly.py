@@ -1,12 +1,11 @@
 import numpy as np
 import pandas as pd
-from . import csv_utils as utils
-
-dfs = []
+from . import utils_csv as utils
 
 
-def clean_data() -> pd.DataFrame:
-    global dfs
+def clean_data() -> list[pd.DataFrame]:
+    """Perform data cleaning on raw data and return it"""
+    dfs: list[pd.DataFrame] = []
     for i in range(len(utils.yearly_data)):
         raw_data = pd.read_csv(f"./csv_data/raw/{utils.yearly_data[i]}.csv")
         clean_df = raw_data.sort_values(by=["Country Code"])
@@ -20,25 +19,39 @@ def clean_data() -> pd.DataFrame:
         frames = []
         for c in range(len(utils.country_codes)):
             # insert country name/code into each temp frame
-            tmp_df = clean_df.iloc[c*rows_per_country:c*rows_per_country+rows_per_country, :].copy()
-            tmp_df.loc[-2] = ["C.NAME"] + [utils.countries[c]] * 16
-            tmp_df.loc[-1] = ["C.CODE"] + [utils.country_codes[c]] * 16
-            tmp_df.index = tmp_df.index + 2
-            tmp_df.sort_index(inplace=True)
-            tmp_df.set_index("Series Code", inplace=True)
-            frames.append(tmp_df)
+            temp = clean_df.iloc[c*rows_per_country:c*rows_per_country+rows_per_country, :].copy()
+            temp.loc[-2] = ["Country Name"] + [utils.countries[c]] * 16
+            temp.loc[-1] = ["Country Code"] + [utils.country_codes[c]] * 16
+            temp.index = temp.index + 2
+            temp.sort_index(inplace=True)
+            temp.set_index("Series Code", inplace=True)
+            frames.append(temp)
         dfs.append(pd.concat(frames, axis=1))
-
-
-def get_dfs(transpose: bool = True) -> pd.DataFrame:
-    global dfs
-    if dfs == []:
-        clean_data()
-    if transpose:
-        dfs = [df.T.reset_index().rename(columns={"index": "Year"}) for df in dfs]
     return dfs
 
 
-def get_csv(index: bool = True):
-    for i in range(len(get_dfs())):
-        utils.get_csv(dfs[i], f"dim_{utils.yearly_data[i]}.csv", index=index, index_label=f"{utils.yearly_data[i]}_id")
+def get_dfs() -> pd.DataFrame:
+    """Returns transformed pandas dataframes table (clean)"""
+    frames = clean_data()
+    if frames == []:
+        clean_data()
+    for df in frames:
+        df = df.T.apply(pd.to_numeric, errors='ignore')
+    return frames
+
+
+def get_csv():
+    """Export the dataframes as a csv file in ../csv_data/ folder"""
+    frames = get_dfs()
+    for i in range(len(frames)):
+        utils.get_csv(frames[i], f"dim_{utils.yearly_data[i]}.csv",
+                      index=True, index_label=f"{utils.yearly_data[i]}_id")
+
+
+def push(engine, if_exists='replace', dtype=None):
+    """Push this dimension to the database"""
+    frames = get_dfs()
+    for i in range(len(frames)):
+        frames[i].to_sql(
+            f"dim_{utils.yearly_data[i]}", con=engine, method='multi', if_exists=if_exists,
+            index_label=f"{utils.yearly_data[i]}_id", dtype=dtype)

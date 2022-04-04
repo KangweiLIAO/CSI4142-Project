@@ -32,8 +32,7 @@ def config_database(filename='database.ini', section='postgresql'):
 
 def connect():
     """ Connect to the PostgreSQL database server """
-    global pg_conn
-    global sql_engine
+    global pg_conn, sql_engine
     try:
         # read connection parameters
         config_database()
@@ -46,6 +45,7 @@ def connect():
             f"postgresql://{pg_info['user']}:{pg_info['password']}@{pg_info['host']}:{pg_info['port']}/{pg_info['database']}").connect()
         pg_conn = psycopg2.connect(**pg_info)
         pg_conn.autocommit = True
+        print('Connection established.')
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
 
@@ -59,13 +59,12 @@ def execute_sql(query: str, fetch: bool = False):
         # execute a statement
         cur.execute(query)
         if(fetch):
-            result = cur.fetchall()
-            cur.close()
-            return result
-        else:
-            cur.close()
+            resp = cur.fetchall()
+            return resp
     except Exception as error:
         print(error)
+    finally:
+        cur.close()
 
 
 def grant_permit(tables, user: str = "lzou041"):
@@ -73,7 +72,7 @@ def grant_permit(tables, user: str = "lzou041"):
         for table in tables:
             execute_sql(f"GRANT ALL ON public.{table} TO {user};")
     else:
-        print(f"No table selected to grant permit...")
+        print(f"No table selected to grant to {user}...")
 
 
 def disconnect():

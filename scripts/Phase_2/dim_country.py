@@ -1,23 +1,24 @@
 import pandas as pd
-from . import csv_utils as utils
-
-df: pd.DataFrame = None
+from . import utils_csv as utils
 
 
-def clean_data():
-    global df
+def clean_data() -> pd.DataFrame:
     raw_data = pd.read_csv(f"./csv_data/raw/country.csv")  # reading raw csv data
-    df = raw_data.sort_values(by=["Code"])  # sort table by series code
+    df = raw_data.sort_values(by=["Country Code"])  # sort table by series code
     df.reset_index(drop=True, inplace=True)
+    return df
 
 
-def get_df(transpose: bool = False) -> pd.DataFrame:
+def get_df() -> pd.DataFrame:
     """Returns pandas dataframe of country dimension table (clean)"""
-    global df
-    if df is None:
-        clean_data()  # init clean data & assign to global df
-    return df.T if transpose else df  # return transpose table or not
+    return clean_data()  # return transpose table or not
 
 
-def get_csv(index: bool = False):
-    utils.get_csv(get_df(), "dim_country.csv", index=index)
+def get_csv():
+    utils.get_csv(get_df(), "dim_country.csv", index=True, index_label="country_id")
+
+
+def push(engine, if_exists='replace', dtype=None):
+    """Push this dimension to the database"""
+    get_df().to_sql("dim_country", con=engine, method='multi', if_exists=if_exists,
+                 index=True, index_label="country_id", dtype=dtype)

@@ -1,10 +1,10 @@
-Code,Country,Continent,Currency,Capital
-CAN,Canada,North America,Canadian dollar,Ottawa
-CHN,China,Asia,Renminbi,Beijing
-IND,India,Asia,Indian rupee,New Delhi
-LRB,Liberia,Africa,Liberian dollar,Monrovia
-MEX,Mexico,North America,Mexican peso,Mexico City
-MOZ,Mozambique,Africa,Mozambican metical,Maputo
-USA,United States,North America,United States Dollar,Washington D.C
-VNM,Vietnam,Asia,Vietnamese dong,Hanoi
-ZAF,South Africa,Africa,South African rand,"Pretoria, Cape Town, Bloemfontein"
+country_id,Country Code,Country Name,Continent,Currency,Capital
+0,CAN,Canada,North America,Canadian dollar,Ottawa
+1,CHN,China,Asia,Renminbi,Beijing
+2,IND,India,Asia,Indian rupee,New Delhi
+3,LRB,Liberia,Africa,Liberian dollar,Monrovia
+4,MEX,Mexico,North America,Mexican peso,Mexico City
+5,MOZ,Mozambique,Africa,Mozambican metical,Maputo
+6,USA,United States,North America,United States Dollar,Washington D.C
+7,VNM,Vietnam,Asia,Vietnamese dong,Hanoi
+8,ZAF,South Africa,Africa,South African rand,"Pretoria, Cape Town, Bloemfontein"

@@ -1,50 +1,49 @@
 import pandas as pd
-from . import csv_utils as utils
-
-df: pd.DataFrame = None
+from . import utils_csv as utils
 
 
-def clean_data():
-    """Perform data cleaning on countries' raw data and assign to global dataframe df"""
+def clean_data() -> pd.DataFrame:
+    """Perform data cleaning on raw data and return it"""
+    df: pd.DataFrame = None
     frames = []  # store different country's data frame
     for i in range(len(utils.countries)):  # for each country
         raw_data = pd.read_csv(f"./csv_data/raw/country/{utils.country_codes[i]}.csv")  # reading raw csv data
-
-        clean_data = raw_data.sort_values(by=["Series Code"])  # sort table by series code
-
+        temp = raw_data.sort_values(by=["Series Code"])  # sort table by series code
         # clean up year's cols name
-        clean_data.rename(columns=lambda n: n.split(' ')[0] if (n[5] == "[") else n, inplace=True)
+        temp.rename(columns=lambda n: n.split(' ')[0] if (n[5] == "[") else n, inplace=True)
         drop_cols = ["Country Name", "Country Code", "Scale (Precision)", "Series Name", "1990"]
 
         # drop unused cols
-        clean_data.drop(columns=drop_cols, inplace=True)
+        temp.drop(columns=drop_cols, inplace=True)
 
         # append country name & code to current country
-        clean_data.loc[-2] = ["C.NAME"] + [utils.countries[i]] * 3
-        clean_data.loc[-1] = ["C.CODE"] + [utils.country_codes[i]] * 3
-        clean_data.index = clean_data.index + 2
+        temp.loc[-2] = ["Country Name"] + [utils.countries[i]] * 3
+        temp.loc[-1] = ["Country Code"] + [utils.country_codes[i]] * 3
+        temp.index = temp.index + 2
 
         # reset table indexes
-        clean_data.sort_index(inplace=True)
-        clean_data.set_index("Series Code", inplace=True)
-        frames.append(clean_data)
-    global df
+        temp.sort_index(inplace=True)
+        temp.set_index("Series Code", drop=True, inplace=True)
+        frames.append(temp)
     df = pd.concat(frames, axis=1)  # concat all countries' data frames
     df.dropna(inplace=True)  # drop NaN values
+    return df
 
 
-def get_df(transpose: bool = True) -> pd.DataFrame:
-    """Returns pandas dataframe of country dimension table (clean)"""
-    global df
-    if df is None:
-        clean_data()  # init clean data & assign to global df
-    if transpose:
-        # return transpose table
-        return df.T.reset_index().rename(columns={"index": "Decades"}).astype({'Decades': 'int64'})
-    else:
-        return df
+def get_df() -> pd.DataFrame:
+    """Returns transformed pandas dataframe of country record dimension table (clean)"""
+    frame = clean_data()
+    return frame.T.reset_index().rename(columns={"index": "Decades"}).astype({'Decades': 'int64'})
 
 
-def get_csv(index: bool = True):
-    # export dataframe df as .csv file in ../csv_data/ folder
-    utils.get_csv(get_df(), "dim_country_record.csv", index=index, index_label="record_id")
+def export_csv(index: bool = False):
+    """Export the dataframe as a csv file in ../csv_data/ folder"""
+    frame = get_df()
+    utils.get_csv(frame, "dim_country_record.csv", index=index, index_label="record_id")
+
+
+def push(engine, if_exists='replace', dtype=None):
+    """Push this dimension to the database"""
+    frame = get_df()
+    frame.to_sql("dim_country_record", con=engine, method='multi', if_exists=if_exists,
+                 index=True, index_label="record_id", dtype=dtype)
