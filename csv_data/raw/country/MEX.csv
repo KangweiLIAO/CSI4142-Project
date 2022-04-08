@@ -1,0 +1,63 @@
+﻿Country Name,Country Code,Series Name,Series Code,Scale (Precision),1990 [YR1990],2000 [YR2000],2010 [YR2010],2020 [YR2020]
+Mexico,MEX,"Population, total",SP.POP.TOTL,Millions (0.00),83.94,98.90,114.09,128.93
+Mexico,MEX,Population growth (annual %),SP.POP.GROW,Unit (0.0),1.9,1.4,1.4,1.1
+Mexico,MEX,Surface area (sq. km),AG.SRF.TOTL.K2,Thousands (0.0),1964.4,1964.4,1964.4,
+Mexico,MEX,Population density (people per sq. km of land area),EN.POP.DNST,Unit (0.0),43.2,50.9,58.7,66.3
+Mexico,MEX,Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Unit (0.0),,,,43.9
+Mexico,MEX,Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population),SI.POV.DDAY,Unit (0.0),9.1,9.0,4.5,1.7
+Mexico,MEX,"GNI, Atlas method (current US$)",NY.GNP.ATLS.CD,Billions (0.00),234.01,614.24,1031.50,1092.87
+Mexico,MEX,"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Unit (0),2790,6210,9040,8480
+Mexico,MEX,"GNI, PPP (current international $)",NY.GNP.MKTP.PP.CD,Billions (0.00),660.62,1073.20,1719.79,2296.39
+Mexico,MEX,"GNI per capita, PPP (current international $)",NY.GNP.PCAP.PP.CD,Unit (0),7870,10850,15070,17810
+Mexico,MEX,Income share held by lowest 20%,SI.DST.FRST.20,Unit (0.0),4.1,3.7,4.7,5.4
+Mexico,MEX,"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Unit (0),71,74,75,
+Mexico,MEX,"Fertility rate, total (births per woman)",SP.DYN.TFRT.IN,Unit (0.0),3.5,2.7,2.3,2.1
+Mexico,MEX,"Adolescent fertility rate (births per 1,000 women ages 15-19)",SP.ADO.TFRT,Unit (0),86,79,68,
+Mexico,MEX,"Contraceptive prevalence, any method (% of married women ages 15-49)",SP.DYN.CONU.ZS,Unit (0),,70,,
+Mexico,MEX,Births attended by skilled health staff (% of total),SH.STA.BRTC.ZS,Unit (0),84,89,94,
+Mexico,MEX,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Unit (0),45,28,19,14
+Mexico,MEX,"Prevalence of underweight, weight for age (% of children under 5)",SH.STA.MALN.ZS,Unit (0.0),9.6,5.6,2.8,4.7
+Mexico,MEX,"Immunization, measles (% of children ages 12-23 months)",SH.IMM.MEAS,Unit (0),75,96,95,
+Mexico,MEX,"Primary completion rate, total (% of relevant age group)",SE.PRM.CMPT.ZS,Unit (0),89,97,100,
+Mexico,MEX,"School enrollment, primary (% gross)",SE.PRM.ENRR,Unit (0.0),112.3,109.0,110.6,104.7
+Mexico,MEX,"School enrollment, secondary (% gross)",SE.SEC.ENRR,Unit (0),56,72,87,
+Mexico,MEX,"School enrollment, primary and secondary (gross), gender parity index (GPI)",SE.ENR.PRSC.FM.ZS,Unit (0),1,1,1,
+Mexico,MEX,"Prevalence of HIV, total (% of population ages 15-49)",SH.DYN.AIDS.ZS,Unit (0.0),0.1,0.2,0.3,0.4
+Mexico,MEX,Forest area (sq. km),AG.LND.FRST.K2,Thousands (0.0),705.9,683.8,669.4,656.9
+Mexico,MEX,Terrestrial and marine protected areas (% of total territorial area),ER.PTD.TOTL.ZS,Unit (0.0),,,,19.1
+Mexico,MEX,"Annual freshwater withdrawals, total (% of internal resources)",ER.H2O.FWTL.ZS,Unit (0.0),15.5,17.7,20.2,21.5
+Mexico,MEX,Urban population growth (annual %),SP.URB.GROW,Unit (0.0),2.5,1.8,1.8,1.4
+Mexico,MEX,Energy use (kg of oil equivalent per capita),EG.USE.PCAP.KG.OE,Unit (0),1473,1517,1532,
+Mexico,MEX,CO2 emissions (metric tons per capita),EN.ATM.CO2E.PC,Unit (0.00),3.19,3.89,4.11,
+Mexico,MEX,Electric power consumption (kWh per capita),EG.USE.ELEC.KH.PC,Unit (0),1185,1800,2019,
+Mexico,MEX,GDP (current US$),NY.GDP.MKTP.CD,Billions (0.00),261.25,707.91,1057.80,1073.92
+Mexico,MEX,GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Unit (0.0),5.2,4.9,5.1,-8.3
+Mexico,MEX,"Inflation, GDP deflator (annual %)",NY.GDP.DEFL.KD.ZG,Unit (0.0),28.2,11.2,4.5,2.9
+Mexico,MEX,"Agriculture, forestry, and fishing, value added (% of GDP)",NV.AGR.TOTL.ZS,Unit (0),7,3,3,4
+Mexico,MEX,"Industry (including construction), value added (% of GDP)",NV.IND.TOTL.ZS,Unit (0),26,34,32,30
+Mexico,MEX,Exports of goods and services (% of GDP),NE.EXP.GNFS.ZS,Unit (0),19,25,30,40
+Mexico,MEX,Imports of goods and services (% of GDP),NE.IMP.GNFS.ZS,Unit (0),20,27,31,38
+Mexico,MEX,Gross capital formation (% of GDP),NE.GDI.TOTL.ZS,Unit (0),23,23,23,19
+Mexico,MEX,"Revenue, excluding grants (% of GDP)",GC.REV.XGRT.GD.ZS,Unit (0.0),15.4,12.1,18.0,18.6
+Mexico,MEX,Net lending (+) / net borrowing (-) (% of GDP),GC.NLD.TOTL.GD.ZS,Unit (0.0),-2.6,-1.0,-4.0,-2.1
+Mexico,MEX,Time required to start a business (days),IC.REG.DURS,Unit (0),,,,
+Mexico,MEX,Domestic credit provided by financial sector (% of GDP),FS.AST.DOMS.GD.ZS,Unit (0.0),,28.0,43.6,64.3
+Mexico,MEX,Tax revenue (% of GDP),GC.TAX.TOTL.GD.ZS,Unit (0.0),11.8,9.6,10.1,13.1
+Mexico,MEX,Military expenditure (% of GDP),MS.MIL.XPND.GD.ZS,Unit (0.0),0.4,0.4,0.5,0.6
+Mexico,MEX,Mobile cellular subscriptions (per 100 people),IT.CEL.SETS.P2,Unit (0.0),0.1,14.2,80.1,93.4
+Mexico,MEX,Individuals using the Internet (% of population),IT.NET.USER.ZS,Unit (0.0),0.0,5.1,31.1,72.0
+Mexico,MEX,High-technology exports (% of manufactured exports),TX.VAL.TECH.MF.ZS,Unit (0),,,22,22
+Mexico,MEX,Statistical Capacity Score (Overall Average) (scale 0 - 100),IQ.SCI.OVRL,Unit (0),,,86,80
+Mexico,MEX,Merchandise trade (% of GDP),TG.VAL.TOTL.GD.ZS,Unit (0),32,49,58,76
+Mexico,MEX,Net barter terms of trade index (2000 = 100),TT.PRI.MRCH.XD.WD,Unit (0),102,100,111,91
+Mexico,MEX,"External debt stocks, total (DOD, current US$)",DT.DOD.DECT.CD,Millions (0),104604,152558,245906,467512
+Mexico,MEX,"Total debt service (% of exports of goods, services and primary income)",DT.TDS.DECT.EX.ZS,Unit (0.0),21.8,31.9,10.1,15.5
+Mexico,MEX,Net migration,SM.POP.NETM,Thousands (0),,,,
+Mexico,MEX,"Personal remittances, received (current US$)",BX.TRF.PWKR.CD.DT,Millions (0),3098,7525,22080,42878
+Mexico,MEX,"Foreign direct investment, net inflows (BoP, current US$)",BX.KLT.DINV.CD.WD,Millions (0),2634,18382,30529,31049
+Mexico,MEX,Net official development assistance received (current US$),DT.ODA.ODAT.CD,Millions (0.0),178.3,-40.5,454.7,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Data from database: WDI Central,,,,,,,,
+Last Updated: 02/15/2022,,,,,,,,

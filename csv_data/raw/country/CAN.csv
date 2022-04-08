@@ -1,0 +1,63 @@
+﻿Country Name,Country Code,Series Name,Series Code,Scale (Precision),1990 [YR1990],2000 [YR2000],2010 [YR2010],2020 [YR2020]
+Canada,CAN,"Population, total",SP.POP.TOTL,Millions (0.00),27.69,30.69,34.00,38.01
+Canada,CAN,Population growth (annual %),SP.POP.GROW,Unit (0.0),1.5,0.9,1.1,1.1
+Canada,CAN,Surface area (sq. km),AG.SRF.TOTL.K2,Thousands (0.0),9879.8,9879.8,9879.8,
+Canada,CAN,Population density (people per sq. km of land area),EN.POP.DNST,Unit (0.0),3.1,3.4,3.8,4.2
+Canada,CAN,Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Unit (0.0),,,,
+Canada,CAN,Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population),SI.POV.DDAY,Unit (0.0),0.2,0.2,0.2,0.2
+Canada,CAN,"GNI, Atlas method (current US$)",NY.GNP.ATLS.CD,Billions (0.00),,694.22,1512.72,1656.24
+Canada,CAN,"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Unit (0),,22620,44490,43580
+Canada,CAN,"GNI, PPP (current international $)",NY.GNP.MKTP.PP.CD,Billions (0.00),,877.36,1336.63,1751.69
+Canada,CAN,"GNI per capita, PPP (current international $)",NY.GNP.PCAP.PP.CD,Unit (0),,28590,39310,46090
+Canada,CAN,Income share held by lowest 20%,SI.DST.FRST.20,Unit (0.0),7.7,7.1,7.2,7.1
+Canada,CAN,"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Unit (0),77,79,81,
+Canada,CAN,"Fertility rate, total (births per woman)",SP.DYN.TFRT.IN,Unit (0.0),1.8,1.5,1.6,1.5
+Canada,CAN,"Adolescent fertility rate (births per 1,000 women ages 15-19)",SP.ADO.TFRT,Unit (0),24,17,12,
+Canada,CAN,"Contraceptive prevalence, any method (% of married women ages 15-49)",SP.DYN.CONU.ZS,Unit (0),,,,
+Canada,CAN,Births attended by skilled health staff (% of total),SH.STA.BRTC.ZS,Unit (0),,99,99,
+Canada,CAN,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Unit (0),8,6,6,5
+Canada,CAN,"Prevalence of underweight, weight for age (% of children under 5)",SH.STA.MALN.ZS,Unit (0.0),,,,
+Canada,CAN,"Immunization, measles (% of children ages 12-23 months)",SH.IMM.MEAS,Unit (0),89,96,90,
+Canada,CAN,"Primary completion rate, total (% of relevant age group)",SE.PRM.CMPT.ZS,Unit (0),,98,,
+Canada,CAN,"School enrollment, primary (% gross)",SE.PRM.ENRR,Unit (0.0),104.3,100.8,98.6,101.0
+Canada,CAN,"School enrollment, secondary (% gross)",SE.SEC.ENRR,Unit (0),100,102,102,
+Canada,CAN,"School enrollment, primary and secondary (gross), gender parity index (GPI)",SE.ENR.PRSC.FM.ZS,Unit (0),1,1,1,
+Canada,CAN,"Prevalence of HIV, total (% of population ages 15-49)",SH.DYN.AIDS.ZS,Unit (0.0),,,,
+Canada,CAN,Forest area (sq. km),AG.LND.FRST.K2,Thousands (0.0),3482.7,3478.0,3473.2,3469.3
+Canada,CAN,Terrestrial and marine protected areas (% of total territorial area),ER.PTD.TOTL.ZS,Unit (0.0),,,,6.5
+Canada,CAN,"Annual freshwater withdrawals, total (% of internal resources)",ER.H2O.FWTL.ZS,Unit (0.0),1.6,1.5,1.3,1.3
+Canada,CAN,Urban population growth (annual %),SP.URB.GROW,Unit (0.0),1.5,1.4,1.3,1.2
+Canada,CAN,Energy use (kg of oil equivalent per capita),EG.USE.PCAP.KG.OE,Unit (0),7630,8265,7789,
+Canada,CAN,CO2 emissions (metric tons per capita),EN.ATM.CO2E.PC,Unit (0.00),15.14,16.78,15.73,
+Canada,CAN,Electric power consumption (kWh per capita),EG.USE.ELEC.KH.PC,Unit (0),16167,17037,15270,
+Canada,CAN,GDP (current US$),NY.GDP.MKTP.CD,Billions (0.00),593.93,744.77,1617.34,1645.42
+Canada,CAN,GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Unit (0.0),,4.9,3.1,-5.2
+Canada,CAN,"Inflation, GDP deflator (annual %)",NY.GDP.DEFL.KD.ZG,Unit (0.0),,4.6,2.8,0.7
+Canada,CAN,"Agriculture, forestry, and fishing, value added (% of GDP)",NV.AGR.TOTL.ZS,Unit (0),,2,1,
+Canada,CAN,"Industry (including construction), value added (% of GDP)",NV.IND.TOTL.ZS,Unit (0),,30,26,
+Canada,CAN,Exports of goods and services (% of GDP),NE.EXP.GNFS.ZS,Unit (0),25,44,29,29
+Canada,CAN,Imports of goods and services (% of GDP),NE.IMP.GNFS.ZS,Unit (0),25,39,31,31
+Canada,CAN,Gross capital formation (% of GDP),NE.GDI.TOTL.ZS,Unit (0),21,21,23,22
+Canada,CAN,"Revenue, excluding grants (% of GDP)",GC.REV.XGRT.GD.ZS,Unit (0.0),19.8,20.9,16.9,18.8
+Canada,CAN,Net lending (+) / net borrowing (-) (% of GDP),GC.NLD.TOTL.GD.ZS,Unit (0.0),-4.5,2.2,-2.2,0.8
+Canada,CAN,Time required to start a business (days),IC.REG.DURS,Unit (0),,,6,
+Canada,CAN,Domestic credit provided by financial sector (% of GDP),FS.AST.DOMS.GD.ZS,Unit (0.0),100.6,110.7,,
+Canada,CAN,Tax revenue (% of GDP),GC.TAX.TOTL.GD.ZS,Unit (0.0),14.2,14.9,11.7,13.3
+Canada,CAN,Military expenditure (% of GDP),MS.MIL.XPND.GD.ZS,Unit (0.0),2.0,1.1,1.2,1.4
+Canada,CAN,Mobile cellular subscriptions (per 100 people),IT.CEL.SETS.P2,Unit (0.0),2.1,28.5,75.6,95.6
+Canada,CAN,Individuals using the Internet (% of population),IT.NET.USER.ZS,Unit (0.0),0.4,51.3,80.3,96.5
+Canada,CAN,High-technology exports (% of manufactured exports),TX.VAL.TECH.MF.ZS,Unit (0),,,15,15
+Canada,CAN,Statistical Capacity Score (Overall Average) (scale 0 - 100),IQ.SCI.OVRL,Unit (0),,,,
+Canada,CAN,Merchandise trade (% of GDP),TG.VAL.TOTL.GD.ZS,Unit (0),42,70,49,49
+Canada,CAN,Net barter terms of trade index (2000 = 100),TT.PRI.MRCH.XD.WD,Unit (0),,100,115,100
+Canada,CAN,"External debt stocks, total (DOD, current US$)",DT.DOD.DECT.CD,Millions (0),,,,
+Canada,CAN,"Total debt service (% of exports of goods, services and primary income)",DT.TDS.DECT.EX.ZS,Unit (0.0),,,,
+Canada,CAN,Net migration,SM.POP.NETM,Thousands (0),,,,
+Canada,CAN,"Personal remittances, received (current US$)",BX.TRF.PWKR.CD.DT,Millions (0),,555,1199,822
+Canada,CAN,"Foreign direct investment, net inflows (BoP, current US$)",BX.KLT.DINV.CD.WD,Millions (0),8402,68303,29715,26559
+Canada,CAN,Net official development assistance received (current US$),DT.ODA.ODAT.CD,Millions (0.0),,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Data from database: WDI Central,,,,,,,,
+Last Updated: 02/15/2022,,,,,,,,

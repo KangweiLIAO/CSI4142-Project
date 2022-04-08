@@ -30,8 +30,8 @@
 
 ## Notice
 
--   In order to connect to the database using Python, you need to fill in your **username** and **password**
-    in database.ini file under 'script/'. (example see below)
+-   In order to connect to the database using Python, you need to create a file named 'database.ini'
+    with your **username** and **password** under 'scripts/' folder. (example see below)
 
     ```yaml
     [postgresql]
