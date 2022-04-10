@@ -26,7 +26,11 @@
 
 ### Phase 3
 
--   [Phase 3 - Instruction](files/Phase_3/Instruction.pdf)
+-   [Phase 3 - Part1 & Part2](files/Phase_3/sql.txt)
+-   [Phase 3 - BI Dashboard](files/Phase_3/instruction.pdf)
+
+### Phase 4
+- [Phase4 - Report]
 
 ## Notice
 
