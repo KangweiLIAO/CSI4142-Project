@@ -1,0 +1,115 @@
+/*-----------Part 1. Standard OLAP operations-----------*/
+/*
+Roll up: Display the average number of Literacy rate (adult female, % of females ages 15 and above) in three continents.
+*/
+SELECT
+	df."Continent",
+	avg(de."SE.ADT.LITR.FE.ZS")
+from dim_country as df, dim_education as de
+GROUP BY (df."Continent") order by avg(de."SE.ADT.LITR.FE.ZS") desc
+
+/*
+Slice: Contrast the number of adults living with HIV in nine countries in 2020
+*/
+select dcr."Country Name", avg(dh."SH.DYN.AIDS") 
+from dim_country_record as dcr, dim_health as dh, fact as f
+where f."record_id" = dcr."record_id" and f."health_id" = dh."health_id" and dcr."Decades" = '2020'
+group by dcr."Country Name" order by avg(dh."SH.DYN.AIDS") desc
+
+/*
+Dice: Contrast the School enrollment, secondary (% gross) in China and Canada in 2020, 2010 and 2005
+*/
+select
+dc."Country Name",
+dd."Year",
+avg(de."SE.SEC.ENRR")
+from fact as f,
+dim_education as de,
+dim_country as dc,
+dim_date as dd
+where 
+(dc."country_id" = f."country_id" and dd."date_id" = f."date_id" and de."education_id" = f."education_id")
+and
+(dc."Country Name" = 'China' or dc."Country Name" = 'Canada') and (dd."Year" = '2020' or dd."Year" = '2010' or dd."Year" = 2005)
+group by(dc."Country Name", dd."Year") order by dc."Country Name"
+
+/*
+Combining OLAP operations
+1. Contrast the  number of adults living with HIV and the School enrollment, secondary (% gross) in India and Mexico in 2020 and 2010
+2. Contrast the unemployment rates(male) and the Suicide mortality rate(male) in nine countries in 2020 and 2010
+*/
+select
+dc."Country Name",
+dd."Year",
+avg(de."SE.SEC.ENRR") as "average of the secondary school enrollment (% gross)",
+avg(dh."SH.DYN.AIDS") as "average of the number of adults living with HIV"
+from fact as f,
+dim_education as de,
+dim_country as dc,
+dim_date as dd,
+dim_health as dh
+where 
+(dc."country_id" = f."country_id" and dd."date_id" = f."date_id" and de."education_id" = f."education_id" and f."health_id" = dh."health_id")
+and
+(dc."Country Name" = 'Mexico' or dc."Country Name" = 'India') and (dd."Year" = '2020' or dd."Year" = '2010')
+group by(dc."Country Name", dd."Year") order by dc."Country Name"
+
+
+select
+dc."Country Name",
+dd."Year",
+avg(dl."SL.UEM.TOTL.MA.ZS") as "average of Unemployment, male (% of male labor force)",
+avg(dp."SH.STA.SUIC.MA.P5") as "average of the Suicide mortality rate, (male per 100,000)"
+from fact as f,
+dim_country as dc,
+dim_date as dd,
+dim_life_quality as dl,
+dim_population as dp
+where 
+(dc."country_id" = f."country_id" and dd."date_id" = f."date_id" and f."population_id" = dp."population_id")
+and
+(dd."Year" = '2020' or dd."Year" = '2010')
+group by(dc."Country Name", dd."Year") order by dc."Country Name"
+
+
+
+
+/*-----------Part 2. Explorative operation-----------*/
+/*
+Iceberg query: Find the top three countries with the highest average population growth
+*/
+select dc."Country Name", avg(dcr."SP.POP.GROW") 
+from fact as f, dim_country as dc, dim_country_record as dcr
+where (dc."country_id" = f."country_id" and f."record_id" = dcr."record_id")
+group by dc."Country Name" 
+order by avg(dcr."SP.POP.GROW") desc limit 3
+
+/*
+Windowing query: Display the Suicide mortality rate, male (per 100,000 male population) in continents
+*/
+SELECT
+dc."Continent",
+dc."Country Name",
+dp."SH.STA.SUIC.MA.P5" as "the Suicide mortality rate, male",
+avg(dp."SH.STA.SUIC.MA.P5")
+OVER (PARTITION BY dc."Continent") 
+FROM fact as f,
+dim_country as dc,
+dim_population as dp
+where (dc."country_id" = f."country_id"  and f."population_id" = dp."population_id")
+
+/*
+Using the Window clause: Display the average of Life expectancy at birth in male and female in nine countries.
+*/
+SELECT 
+dc."Continent",
+dc."Country Name",
+dp."SP.DYN.LE00.FE.IN" as "Life expectancy at birth, female (years)",
+avg(dp."SP.DYN.LE00.FE.IN") OVER w, 
+dp."SP.DYN.LE00.MA.IN" as "Life expectancy at birth, male (years)",
+avg(dp."SP.DYN.LE00.MA.IN") OVER w
+FROM fact as f,
+dim_country as dc,
+dim_population as dp
+where (dc."country_id" = f."country_id"  and f."population_id" = dp."population_id")
+WINDOW w AS (PARTITION BY dc."Continent");
