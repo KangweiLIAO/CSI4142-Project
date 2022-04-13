@@ -28,6 +28,7 @@
 
 -   [Phase 3 - Part1 & Part2](files/Phase_3/sql.txt)
 -   [Phase 3 - BI Dashboard](files/Phase_3/instruction.pdf)
+-   [Phase 3 - Teamwork plan](files/Phase_3/Phase3-TeamPlanning.csv)
 
 ### Phase 4
 - [Phase 4 - Report](files/Phase_4/Dliverable4-Report.pdf)
