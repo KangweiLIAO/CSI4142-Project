@@ -30,7 +30,8 @@
 -   [Phase 3 - BI Dashboard](files/Phase_3/instruction.pdf)
 
 ### Phase 4
-- [Phase4 - Report]
+- [Phase 4 - Report]
+- [Phase 4 - Teamwork plan](files/Phase_4/Phase4-TeamPlanning2022.xlsx)
 
 ## Notice
 
